@@ -19,7 +19,7 @@ public:
                     // int block = 3 * (i / 3) + (j / 3);
                     string row = string(1, board[i][j]) + "_ROW_" + to_string(i);
                     string col = string(1, board[i][j]) + "COL_" + to_string(j);
-                    string box = string(1, board[i][j]) + "_BOX_" + to_string((i / 3)) + to_string((j / 3));
+                    string box = string(1, board[i][j]) + "_BOX_" + to_string(i / 3) + to_string((j / 3));
 
                     if (str.find(row) != str.end() || str.find(col) != str.end() || str.find(box) != str.end())
                         return false;
